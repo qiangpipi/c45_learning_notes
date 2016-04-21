@@ -24,12 +24,14 @@ This is a learning notes of C4.5 which described in the book "The Top Ten Algori
 From the data set table:  
 - The possibility to "Play Golf" is 9.0/14.0;  
 - The possibility not to "Play Golf" is 5.0/14.0;  
-- The entropy of the "Play Golf?"  
-<img src="http://www.forkosh.com/mathtex.cgi?sum_{i=0}^n-p_{i}log_2%20p_{i}">  
+- The entropy of the "Play Golf? in set D"  
+Entropy(PlayGolf? in D) 
+    = <img src="http://www.forkosh.com/mathtex.cgi?sum_{i=0}^n-p_{i}log_2%20p_{i}">  
     = -(9.0/14.0)*log2(9.0/14.0)-(5.0/14.0)log2(5.0/14.0)  
     = 0.945934  
 
 ### Test for column "Day" ###
 ### Test for column "Outlook" ###
-Gain(Outlook) = Entropy(PlayGolf? in Outlook) - Sum
+Gain(Outlook)  
+= Entropy(PlayGolf? in D) - <img src="http://www.forkosh.com/mathtex.cgi?sum_{i=v}D_{v}/D">Entropy(PlanGolf? in <img src="http://www.forkosh.com/mathtex.cgi?D_{v}">)
 ### Test for column "Windy" ###
